@@ -12,6 +12,14 @@ import java.math.BigDecimal;
 public interface CartItem {
 
 	/**
+	 * Returns true if this instance is of the supplied type.
+	 * 
+	 * @param cartItemType
+	 * @return
+	 */
+	boolean isType(CartItemType cartItemType);
+	
+	/**
 	 * Return the short title of the cart item, 
 	 * 
 	 * @return
